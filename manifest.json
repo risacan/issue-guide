@@ -1,0 +1,16 @@
+{
+  "manifest version": 2,
+  "name": "Issue Maker",
+  "description": "GitHub Issueのテンプレートを挿入します",
+  "version": 1,
+  "version_name": ""
+  "default_locale": "jp",
+  "icons": {},
+  "browser_action": {},
+  "author": "risacan",
+  "background": {
+    "persistent": false
+  },
+  "content_scripts": [{}],
+  "permissions": []
+}
