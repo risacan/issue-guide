@@ -1,16 +1,39 @@
 {
-  "manifest version": 2,
-  "name": "Issue Maker",
+  "manifest_version": 2,
+  "name": "Issue Guide",
   "description": "GitHub Issueのテンプレートを挿入します",
-  "version": 1,
-  "version_name": ""
-  "default_locale": "jp",
-  "icons": {},
-  "browser_action": {},
+  "version": "1.0",
+  "version_name": "Spring",
+  "icons": {
+    "16": "images/icons/icon_16.png",
+    "48": "images/icons/icon_48.png",
+    "128": "images/icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icons/icon_19.png",
+      "38": "images/icons/icon_38.png"
+    },
+    "default_title": "Issue Guide",
+    "default_popup": "popup.html"
+  },
   "author": "risacan",
   "background": {
+    "scripts": [
+      "js/background.js"
+    ],
     "persistent": false
   },
-  "content_scripts": [{}],
-  "permissions": []
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "css": ["css/contents_style.css"],
+      "js": ["js/content_scripts/common.js"]
+    }
+  ],
+  "permissions": [
+    "https://github.com/*"
+  ]
 }
