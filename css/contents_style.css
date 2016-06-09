@@ -1,0 +1,12 @@
+.body {
+  color: #686868;
+}
+.wrapper {
+  display: block;
+  width:500px;
+}
+.header {
+  color: #686868;
+  width: 100%;
+  font-family: 'Bad Script', cursive;
+}

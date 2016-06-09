@@ -18,22 +18,17 @@
     "default_popup": "popup.html"
   },
   "author": "risacan",
-  "background": {
-    "scripts": [
-      "js/background.js"
-    ],
-    "persistent": false
-  },
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*"
+        "https://github.com/*/*/issues/new"
       ],
       "css": ["css/contents_style.css"],
-      "js": ["js/content_scripts/common.js"]
+      "js": ["./lib/jquery-2.2.4.min.js", "./js/contents_scripts.js"],
+      "run_at": "document_end"
     }
   ],
   "permissions": [
-    "https://github.com/*"
+    "tabs", "http://*/*", "https://*/*"
   ]
 }
