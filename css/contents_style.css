@@ -1,12 +1,17 @@
-.body {
-  color: #686868;
-}
 .wrapper {
   display: block;
-  width:500px;
+  width: 104px;
+  margin: 0;
 }
 .header {
+  font-size: 1.4rem;
   color: #686868;
-  width: 100%;
   font-family: 'Bad Script', cursive;
+  text-align: center;
+}
+.button {
+  margin: 2px auto;
+  width: 100px;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
