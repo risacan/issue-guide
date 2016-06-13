@@ -2,12 +2,12 @@
   display: block;
   width: 104px;
   margin: 0;
+  text-align: center;
 }
 #issue_guide {
   font-size: 1.4rem;
   color: #686868;
   font-family: 'Bad Script', cursive;
-  text-align: center;
 }
 .button {
   margin: 2px auto;
