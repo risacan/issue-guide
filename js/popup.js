@@ -3,8 +3,6 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
   tabId = tabs[0].id
 });
 
-console.log(tabId)
-
 $("#bug").on("click", function () {
   var title = "[バグ] "
   var body = "# 事象\n\n# 環境\n\n# 原因\n\n# 対応\n\n# Close条件\n\nbug fixがマージされる"
