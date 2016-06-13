@@ -23,7 +23,6 @@
       "matches": [
         "https://github.com/*/*/issues/new"
       ],
-      "css": ["css/contents_style.css"],
       "js": ["./lib/jquery-2.2.4.min.js", "./js/contents_scripts.js"],
       "run_at": "document_end"
     }
