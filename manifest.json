@@ -23,7 +23,7 @@
       "matches": [
         "https://github.com/*/*/issues/new"
       ],
-      "js": ["./lib/jquery-2.2.4.min.js", "./backend/index.js"],
+      "js": ["./lib/jquery-3.0.0.min.js", "./backend/index.js"],
       "run_at": "document_end"
     }
   ],
