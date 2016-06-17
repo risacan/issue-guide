@@ -3,7 +3,7 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
   tabId = tabs[0].id
 });
 
-$(window).load(chrome.tabs.reload())
+$(window).on("load", chrome.tabs.reload())
 
 $("#bug").on("click", function () {
   var title = "[バグ] "
