@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(
   function (request, sender, sendResponse) {
-    $("#issue_title").val(request.title)
-    $("#issue_body").val(request.body)
+    $("#content-title").val(request.title)
+    $('#wysiwygTextarea_ifr').contents().find('#tinymce').html(request.body)
   }
 )

@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Issue Guide",
+  "name": "Issue Guide for コンフルエンス",
   "description": "GitHub Issueのテンプレートを挿入します",
   "version": "1.0",
   "version_name": "Spring",
@@ -21,7 +21,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*/*/issues/new"
+        "https://intra2/pages/*"
       ],
       "js": ["./lib/jquery-3.0.0.min.js", "./backend/index.js"],
       "run_at": "document_end"
