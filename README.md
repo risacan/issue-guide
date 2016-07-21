@@ -1,4 +1,4 @@
-# Issue Guide
+# Issue Guide(α)
 is a Chrome extension that guide you to write your Issues and Pull Requests more clearly.
 
 # How to use on Google Chrome
